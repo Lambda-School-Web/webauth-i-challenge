@@ -6,8 +6,6 @@ module.exports = { restricted };
 
 async function restricted(req, res, next) {
   let { username, password } = req.headers;
-  console.log(username);
-  console.log(password);
 
   if (username && password) {
     try {
